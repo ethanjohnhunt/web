@@ -1,0 +1,19 @@
+{
+  "name": "ebayoauthtest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ebay-oauth-nodejs-client": "^1.2.2",
+    "express": "^4.21.1",
+    "session": "^0.1.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay API Integration</title>
+</head>
+
+<body>
+    <h1>eBay API Integration</h1>
+    <button id="test-api">Search eBay API</button>
+    <pre id="result"></pre>
+
+    <script>
+        const serverUrl = 'http://localhost:3000';
+
+        document.getElementById('test-api').addEventListener('click', async () => {
+            try {
+                // Make a call to the backend to fetch eBay search results
+                const ebayResponse = await fetch(`${serverUrl}/api/ebay-search?q=drone&limit=3`);
+                const ebayData = await ebayResponse.json();
+
+                // Display the result
+                document.getElementById('result').textContent = JSON.stringify(ebayData, null, 2);
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('result').textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+      <a href="/auth/ebay">Login with eBay</a>
+
+</body>
+
+</html>
