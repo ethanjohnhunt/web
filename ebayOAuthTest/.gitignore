@@ -1,1 +1,47 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+
+# Local environment files
 .env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Dependency directories
+coverage/
+
+# Cache files
+.cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.swp
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Git-specific files
+*.orig
+
+# Miscellaneous
+*.log
+*.log.*
+*.gz
